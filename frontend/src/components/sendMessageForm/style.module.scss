@@ -1,0 +1,131 @@
+.sendMessageFormWrapper {
+  display: flex; // define o tipo de alinhamento
+  flex-direction: column; // define a orientação do alinhamento
+  position: relative; // define a base do alinhamento
+  padding: 24px; // define um espaçamento interno
+  align-items: center; // define o alinhamento do itens dentro do conteudo
+  align-self: center; // define a ocupação do item dentro do conteudo
+
+  text-align: center; // define o alinhamento do texto
+
+  background: #1b1b1f; // define uma cor de função
+}
+
+.signOutButton {
+  position: absolute; // define a base do alinhamento
+  border: 0; // define uma borda
+  left: 24px; // define a localização do item se baseando no lado esquerdo
+  top: 24px; // define a localização do item se baseando no lado de cima
+
+  background: transparent; // define a cor de fundo
+  color: #c4c4cc; // define uma cor
+
+  cursor: pointer; // define o tipo do cursor do mouse
+
+  &:hover { // executar um grupo de comandos quando for ativado pelo mouse
+    filter: brightness(0.9); // define o brilho da cor
+  }
+}
+
+.userInformation {
+  display: flex; // define o tipo do alinhamento
+  flex-direction: column; // define a orientação do alinhamento
+  align-items: center; // define o alinhamento dos itens dentro do conteudo
+
+  .userImage {
+    padding: 3px; // define um espaçamento interno
+    background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%); // define uma cor de fundo
+    border-radius: 50%; // define um arredondamento
+    line-height: 0; // define o tamanho da linha
+
+    img {
+      width: 200px; // define a altura
+      height: 200px; // define a largura
+      border-radius: 50%; // define um arredondamento
+      border: 6px solid #121214; // define uma borda
+    }
+  }
+
+  .userName {
+    margin-top: 16px; // define um espaçamento externo
+    font-size: 24px; // define o tamanho do texto
+    line-height: 30px; // define o tamanho da linha
+  }
+
+  .userGitHub {
+    display: flex; // define o tipo do alinhamento
+    align-items: center; // define o alinhamento do item dentro do conteudo
+    margin-top: 8px; // define um espaçamento externo no lado de cima
+
+    color: #c4c4cc; // define uma cor
+
+    svg {
+      margin-right: 8px; // define um espaçamento externo no lado de direito
+    }
+  }
+}
+
+.sendMessageForm {
+  display: flex; // define o tipo do alinhamento
+  flex-direction: column; // define o direção do alinhamento
+  align-self: stretch; // define a ocupação do item dentro do conteudo
+  margin-top: 48px; // define um espaçamento externo no lado de cima
+
+  background: #202024; // define uma cor de fundo
+
+  label {
+    padding: 18px 24px; // define um espaçamento interno
+
+    background: #29292e; // define uma cor de fundo
+
+    font-size: 20px; // define o tamanho do texto
+    text-align: left; // define o tamanho da linha
+    font-weight: bold; // define o estilo do texto
+  }
+
+  textArea {
+    padding: 24px; // define um espaçamento interno
+
+    border: 0; // define uma borda
+    height: 160px; // define a altura
+    background: transparent; // define a cor de fundo
+
+    color: #e1e1e6; // define uma cor
+    font-size: 16px; // define o tamanho do texto
+    line-height: 24px; // define o tamanho da linha
+
+    resize: none;
+
+    &:focus { // executa quando o item for focado
+      outline: 0;
+    }
+
+    &::placeholder {
+      color: #8d8d99
+    }
+  }
+
+  button {
+    display: flex; // define o tipo do alinhamento
+    justify-content: center; // define o alinhamento do conteudo
+    align-items: center; // define o alinhamento do item dentro do conteudo
+    margin: 24px; // define um espaçamento externo
+    padding: 0 32px; // define um espaçamento interno
+    align-self: flex-end; // define o preenchimento do item dentro do conteudo
+    height: 40px; // define a altura
+
+    border: 0; // define uma borda
+    background: #ff008e; // define uma cor de fundo
+    cursor: pointer; // define o tipo do cursor
+
+    color: #ffffff; // define uma cor
+    font-size: 14px; // define o tamanho do texto
+    font-weight: bold; // define o estilo do texto
+    text-transform: uppercase; // define o formato do texto (uppercase: letra maiuscula)
+    text-decoration: none; // define o sublinhado do texto
+
+    &:hover { // executar estes comando quando o item dos selecionado
+      filter: brightness(0.9); // define o brilho da cor
+    }
+  }
+}

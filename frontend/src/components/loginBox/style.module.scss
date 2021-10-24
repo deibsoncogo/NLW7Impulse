@@ -1,0 +1,43 @@
+.loginBoxWrapper {
+  display: flex; // define o tipo de alinhamento
+  text-align: center; // define para o texto ficar no centro
+  flex-direction: column; // define o orientação do alinhamento
+  justify-content: center; // define o alinhamento do conteudo
+  align-items: center; // define o alinhamento dos itens dentro do conteudo
+
+  padding: 400px 80px 0; // define um espaçamento interno
+
+  height: 100vh; // define a altura se baseando no tamanho do monitor
+  width: 100%; // define a largura se baseando no tamanho da página
+  background: #17171a url(../../assets//banner-girl.png) no-repeat center top; // insere uma imagen pelo CSS
+
+  strong {
+    line-height: 36px; // define o tamanho da linha
+    font-size: 32px; // define o tamanho do texto
+  }
+
+  .signInWithGithub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffcd1e; // define a cor de fundo
+    margin-top: 32px; // define um espaçamento externo
+    padding: 0 40px; // define um espaçamento interno
+    height: 56px; // define a altura
+
+    color: #09090a; // define a cor do texto
+    font-size: 14px; // define o tamanho do texto
+    font-weight: bold; // define o estilo do texto
+    text-transform: uppercase; // define o formato do texto (uppercase: letra maiuscula)
+    text-decoration: none; // define o sublinhado do texto
+
+    svg {
+      margin-right: 16px; // define espaçamento externo
+    }
+
+    &:hover { // define ações quando o item for ativado pelo mouse
+      filter: brightness(0.9); // define o brilho da cor
+    }
+  }
+}

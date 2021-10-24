@@ -1,0 +1,59 @@
+.messageListWrapper {
+  display: flex; // define o tipo de alinhamento
+  flex-direction: column; // define o formato do alinhamento
+  justify-content: space-between; // define o alinhamento do conteudo
+  align-items: flex-start; // define o alinhamento dos itens dentro do conteudo
+
+  > img {
+    height: 28px; // define a altura da imagem
+    margin: 32px 0; // define um espaço externo
+  }
+}
+
+.messageList {
+  display: flex; // define o tipo de alinhamento
+  flex-direction: column; // define o formato do alinhamento
+  justify-content: center; // define o alinhamento do conteudo
+  gap: 40px; // define o espaçamento entre os itens
+  flex: 1; // cria um grupo de espaçamento
+
+  list-style: none; // define o tipo da lista
+
+  .message {
+    max-width: 440px; // define um tamanho máximo
+
+    &:nth-child(2) { // define uma configuração para o segundo item da lista
+      margin-left: 80px; // define um espaçamento externo no lado esquerdo
+    }
+
+    .messageContent {
+      font-size: 20px; // define o tamanho do texto
+      line-height: 28px; // define o tamanho da linha
+    }
+
+    .messageUser {
+      display: flex; // define o tipo de alinhamento
+      align-items: center; // define o alinhamento dos itens dentro do conteudo
+      margin-top: 16px; // define um espaçamento externo no lado de cima
+
+      .userImage {
+        padding: 2px; // define um espaçamento interno
+        background: linear-gradient(100deg, #ff008e 0%, #ffcd1e 100%); // define uma cor de fundo
+        border-radius: 50%; // define um arredondamento
+        line-height: 0; // define o tamanho da linha
+
+        img {
+          width: 30px; // define a altura
+          height: 30px; // define a largura
+          border-radius: 50%; // define um arredondamento
+          border: 4px solid #121214; // define uma borda
+        }
+      }
+
+      span {
+        font-size: 16px; // define o tamanho do texto
+        margin-left: 12px; // define um espaçamento externo no lado esquerdo
+      }
+    }
+  }
+}
