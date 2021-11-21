@@ -2,7 +2,7 @@ import { Request, Response } from "express"; // importações para lidar com o r
 import { CreateMessageService } from "../services/createMessageService";
 
 // classe que será o controller da criação de mensagem
-class CreateMessageController {
+export class CreateMessageController {
   async execute(request: Request, response: Response) { // função principal
     const { message } = request.body; // recebe os dados
     const { userId } = request; // recebe os dados
@@ -11,8 +11,6 @@ class CreateMessageController {
 
     const result = await createMessageService.execute(message, userId); // chama o serviço
 
-    return response.json(result); // retornar algo ao chamador
+    return response.status(201).json(result); // retornar algo ao chamador
   }
 }
-
-export { CreateMessageController }; // exporta para poder ser chamado

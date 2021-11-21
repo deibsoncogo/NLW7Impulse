@@ -2,7 +2,7 @@ import { io } from "../app"; // dependência para lidar com o conexão de envio 
 import { prismaClient } from "../prisma"; // dependência que vai lidar com o acesso ao DB
 
 // classe que será o servico da criação de mensagem
-class CreateMessageService {
+export class CreateMessageService {
   async execute(text: string, userId: string) { // função principal
     const message = await prismaClient.message.create({ // salva a mensagem no banco de dados
       data: {
@@ -27,5 +27,3 @@ class CreateMessageService {
     return message; // retornar algo ao chamador
   }
 }
-
-export { CreateMessageService }; // exporta para poder ser chamado

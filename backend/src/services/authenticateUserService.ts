@@ -14,7 +14,7 @@ interface IUserGitHub { // tipagem dos dados do usuário do GitHub
 }
 
 // classe que será o serviço da criação da autenticação do usuário
-class AuthenticateUserService {
+export class AuthenticateUserService {
   async execute(code: string) { // função principal
     // define o link para executar o login do GitHub
     const url = "https://github.com/login/oauth/access_token";
@@ -50,7 +50,7 @@ class AuthenticateUserService {
     }
 
     const token = sign( // cria o token
-      { // // payload do token
+      { // payload do token
         user: { // inserindo as informações do usuário
           id: user.id,
           name: user.name,
@@ -67,5 +67,3 @@ class AuthenticateUserService {
     return { token, user }; // retornar algo ao chamador
   }
 }
-
-export { AuthenticateUserService };

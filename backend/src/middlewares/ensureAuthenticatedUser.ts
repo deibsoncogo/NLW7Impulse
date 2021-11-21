@@ -6,7 +6,7 @@ interface ITokenPayload { // tipagem do payload do token
 }
 
 // função que vai certificar que existe um usuário logado
-function EnsureAuthenticatedUser(request: Request, response: Response, next: NextFunction) {
+export function EnsureAuthenticatedUser(request: Request, response: Response, next: NextFunction) {
   const authToken = request.headers.authorization; // recebe os dados
 
   if (!authToken) { // vai barrar se o token não for informado
@@ -26,5 +26,3 @@ function EnsureAuthenticatedUser(request: Request, response: Response, next: Nex
     return response.status(401).json({ error: "Token inválido" }); // lança um erro
   }
 }
-
-export { EnsureAuthenticatedUser }; // exporta para poder ser chamado

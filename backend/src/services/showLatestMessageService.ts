@@ -1,7 +1,7 @@
 import { prismaClient } from "../prisma"; // dependência que vai lidar com o acesso ao DB
 
 // classe que será o controller da busca das última mensagens
-class ShowLatestMessageService {
+export class ShowLatestMessageService {
   async execute() { // função principal
     const message = await prismaClient.message.findMany({ // realiza a busca
       take: 3, // define quantos dados retornar
@@ -12,5 +12,3 @@ class ShowLatestMessageService {
     return message; // retornar algo ao chamador
   }
 }
-
-export { ShowLatestMessageService }; // exporta para poder ser chamados

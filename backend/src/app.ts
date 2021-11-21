@@ -21,16 +21,4 @@ app.use(express.json()); // define o tipo do dado a trabalhar
 
 app.use(router); // executa o arquivo de rota
 
-// cria o login com o GitHub
-app.get("/github", (request, response) => {
-  response.redirect(`https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`);
-});
-
-// retorno do login com o GitHub
-app.get("/signin/callback", (request, response) => {
-  const { code } = request.query; // recebe os dados
-
-  return response.json(code); // retornar algo ao chamador
-});
-
 export { serverHttp, io }; // exporta para poder ser chamado

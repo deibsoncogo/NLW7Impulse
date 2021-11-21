@@ -2,7 +2,7 @@ import { Request, Response } from "express"; // importações para lidar com o r
 import { AuthenticateUserService } from "../services/authenticateUserService";
 
 // classe que será o controller da criação da autenticação do usuário
-class AuthenticateUserController {
+export class AuthenticateUserController {
   async execute(request: Request, response: Response) { // função principal
     const { code } = request.body; // recebe os dados
 
@@ -11,11 +11,9 @@ class AuthenticateUserController {
     try { // serve para detectar erros
       const result = await authenticateUserService.execute(code); // chama o servico
 
-      return response.json(result); // retornar algo ao chamador
+      return response.status(201).json(result); // retornar algo ao chamador
     } catch (error) { // serve para dar tratativa ao erro
       return response.json({ error: error.message }); // realiza a tratativa do erro
     }
   }
 }
-
-export { AuthenticateUserController }; // exporta para poder ser chamado
