@@ -7,7 +7,7 @@ Para instalar as dependências necessárias temos que executar o seguinte comand
 yarn
 ```
 
-Para iniciar o site podemos utilizar o atalho `yarn start` ou o seguinte comando
+Para iniciar o site podemos utilizar o atalho `yarn dev` ou o seguinte comando
 ```bash
 yarn vite
 ```
@@ -23,7 +23,7 @@ Dependências usadas em modo de desenvolvimento: `eslint`, `typescript` e `vite`
 
 ## Imagens
 ### Tela principal
-![Tela principal](/src/assets/prints/print1.png)
+![Tela principal](/frontend/src/assets/prints/print1.png)
 
 ### Tela principal com o usuário logado
-![Tela principal com o usuário logado](/src/assets/prints/print2.png)
+![Tela principal com o usuário logado](/frontend/src/assets/prints/print2.png)
