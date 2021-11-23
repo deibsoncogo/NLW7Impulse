@@ -1,5 +1,5 @@
 import { useEffect, createContext, ReactNode, useState } from "react"; // framework que vai lidar com diversas coisas importante
-import { api } from "../services/api";
+import { api } from "../services/backend";
 
 // tipagem do usuario da aplicação
 type IUser = {
@@ -33,14 +33,14 @@ export const AuthContext = createContext({} as IAuthContextData); // cria o cont
 export function AuthProvider(props: IAuthProvider) {
   const [user, setUser] = useState<IUser | null>(null); // conceito de imutabilidade
 
-  const clientId = "0453f40aca03ad558b9e"; // define o ID do cliente do GitHub
+  const clientId = "1c8205d8d0f05d407569"; // define o ID do cliente do GitHub
 
   // define o link para executar o login pelo GitHub
   const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=${clientId}`;
 
   // função que servira para autenticar o usuário
   async function SignIn(gitHubCode: string) {
-    const { data } = await api.post<IAuthResponse>("authenticate", { code: gitHubCode }); // chama o servidor
+    const { data } = await api.post<IAuthResponse>("user", { code: gitHubCode }); // chama o servidor
 
     api.defaults.headers.common.authorization = `Bearer ${data.token}`; // salva o token no cabeçalho da requisição
 
@@ -61,7 +61,7 @@ export function AuthProvider(props: IAuthProvider) {
     if (token) { // verifica se existe algo salvo na variável
       api.defaults.headers.common.authorization = `Bearer ${token}`; // salva o token no cabeçalho da requisição
 
-      api.get<IUser>("profile").then((response) => { // realiza a chamada ao servidor
+      api.get<IUser>("user").then((response) => { // realiza a chamada ao servidor
         setUser(response.data); // salva o usuário dentro do frontend
       });
     }

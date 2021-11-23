@@ -39,8 +39,8 @@
     line-height: 0; // define o tamanho da linha
 
     img {
-      width: 200px; // define a altura
-      height: 200px; // define a largura
+      width: 180px; // define a altura
+      height: 180px; // define a largura
       border-radius: 50%; // define um arredondamento
       border: 6px solid #121214; // define uma borda
     }
@@ -69,12 +69,12 @@
   display: flex; // define o tipo do alinhamento
   flex-direction: column; // define o direção do alinhamento
   align-self: stretch; // define a ocupação do item dentro do conteudo
-  margin-top: 48px; // define um espaçamento externo no lado de cima
+  margin-top: 10%; // define um espaçamento externo no lado de cima
 
   background: #202024; // define uma cor de fundo
 
   label {
-    padding: 18px 24px; // define um espaçamento interno
+    padding: 12px 24px; // define um espaçamento interno
 
     background: #29292e; // define uma cor de fundo
 
@@ -84,10 +84,10 @@
   }
 
   textArea {
-    padding: 24px; // define um espaçamento interno
+    padding: 20px; // define um espaçamento interno
 
     border: 0; // define uma borda
-    height: 160px; // define a altura
+    height: 100px; // define a altura
     background: transparent; // define a cor de fundo
 
     color: #e1e1e6; // define uma cor
@@ -109,7 +109,7 @@
     display: flex; // define o tipo do alinhamento
     justify-content: center; // define o alinhamento do conteudo
     align-items: center; // define o alinhamento do item dentro do conteudo
-    margin: 24px; // define um espaçamento externo
+    margin: 14px 24px; // define um espaçamento externo
     padding: 0 32px; // define um espaçamento interno
     align-self: flex-end; // define o preenchimento do item dentro do conteudo
     height: 40px; // define a altura

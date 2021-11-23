@@ -1,6 +1,6 @@
 import { useContext } from "react"; // framework que vai lidar com diversas coisas importante
 import { VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com icones
-import { AuthContext } from "../../contexts/auth";
+import { AuthContext } from "../../contexts/authContext";
 import style from "./style.module.scss";
 
 // função que vai conter os itens para realizar o login

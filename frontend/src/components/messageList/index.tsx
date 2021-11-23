@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"; // framework que vai lidar com diversas coisas importante
-import io from "socket.io-client"; // dependência que vai analisar as ações dos clientes
 import logoImg from "../../assets/logo.svg";
-import { api } from "../../services/api";
+import { api, socket } from "../../services/backend";
 import style from "./style.module.scss";
 
 type IMessage = { // tipagem da mensagem
@@ -15,8 +14,6 @@ type IMessage = { // tipagem da mensagem
 
 // banco de dados volátil tipado para receber temporariamente as novas mensagens
 const messageQueue: IMessage[] = [];
-
-const socket = io("http://localhost:3333"); // cria a conexão com o servidor
 
 // define um grupo de comando para ser executado quando este evento for encontrado
 socket.on("newMessage", (newMessage) => {
@@ -43,7 +40,7 @@ export function MessageList() {
   }, []);
 
   useEffect(() => { // serve executar um grupo de comandos quando a página for carrega
-    api.get<IMessage[]>("message/last").then((response) => { // executa o servidor trazendo as mensagens
+    api.get<IMessage[]>("message").then((response) => { // executa o servidor trazendo as mensagens
       setMessageAll(response.data); // salva as mensagens no banco de dados volátil
     });
   }, []);

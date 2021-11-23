@@ -2,7 +2,7 @@ import "./styles/global.css"; // importando uma estilização global
 import React from "react"; // framework que vai lidar com diversas coisas importante
 import ReactDOM from "react-dom"; // framework que vai lidar com as rotas da aplicação
 import { App } from "./App"; // importando o arquivo principal da aplicação
-import { AuthProvider } from "./contexts/auth"; // importando o contexto de autenticação
+import { AuthProvider } from "./contexts/authContext"; // importando o contexto de autenticação
 
 ReactDOM.render(
   <React.StrictMode>

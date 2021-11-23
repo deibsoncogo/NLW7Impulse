@@ -1,7 +1,7 @@
 import { FormEvent, useContext, useState } from "react"; // framework que vai lidar com diversas coisas importante
 import { VscSignOut, VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com icones
-import { AuthContext } from "../../contexts/auth";
-import { api } from "../../services/api";
+import { AuthContext } from "../../contexts/authContext";
+import { api } from "../../services/backend";
 import style from "./style.module.scss";
 
 // função que vai servi para criar o visual e enviar a mensagem para o servidor
