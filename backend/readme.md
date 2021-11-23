@@ -9,7 +9,7 @@ Para instalar as dependências necessárias temos que executar o seguinte comand
 yarn
 ```
 
-Para iniciar o servidor podemos utilizar o atalho `yarn start` ou o seguinte comando
+Para iniciar o servidor podemos utilizar o atalho `yarn dev` ou o seguinte comando
 ```bash
 yarn ts-node-dev --exit-child src/server.ts
 ```
