@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"; // importação de um framework
 import { ScrollView } from "react-native"; // importação de um framework
 import { io } from "socket.io-client"; // dependência que vai lidar com o monitoramento de conexões do cliente
-import { api } from "../../services/api";
+import { api } from "../../services/backend";
 import { Message, IMessage } from "../message";
 import { style } from "./style";
 
@@ -20,7 +20,7 @@ export function MessageList() {
 
   useEffect(() => { // vai executar algo sempre que este arquivo for iniciado
     async function FetchMessage() { // cria uma função assincrona
-      const messageResponse = await api.get<IMessage[]>("/message/last"); // executa esta rota no backend
+      const messageResponse = await api.get<IMessage[]>("/message"); // executa esta rota no backend
       setCurrentMessages(messageResponse.data); // salva o retorno no DB volátil
     }
 

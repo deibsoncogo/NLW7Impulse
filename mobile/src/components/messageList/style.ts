@@ -8,7 +8,7 @@ export const style = StyleSheet.create({
   },
 
   content: {
-    paddingTop: 135, // define um espaçamento externo em cima
-    paddingBottom: 184, // define um espaçamento externo em baixo
+    paddingTop: 10, // define um espaçamento externo em cima
+    paddingBottom: 10, // define um espaçamento externo em baixo
   },
 });

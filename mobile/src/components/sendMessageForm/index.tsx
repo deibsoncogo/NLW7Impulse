@@ -1,6 +1,6 @@
 import React, { useState } from "react"; // importa um framework
 import { Alert, Keyboard, TextInput, View } from "react-native"; // importa um framework
-import { api } from "../../services/api";
+import { api } from "../../services/backend";
 import { color } from "../../theme";
 import { Button } from "../button";
 import { style } from "./style";

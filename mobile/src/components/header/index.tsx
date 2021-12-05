@@ -1,7 +1,7 @@
 import React from "react"; // importação do framework
 import { Text, TouchableOpacity, View } from "react-native"; // importação do framework
 import LogoSVG from "../../assets/logo.svg";
-import { UseAuth } from "../../hooks/auth";
+import { UseAuth } from "../../hooks/authHooks";
 import { UserPhoto } from "../userPhoto";
 import { style } from "./style";
 
@@ -14,7 +14,7 @@ export function Header() {
       <LogoSVG />
 
       <View style={style.logoutButton}>
-        { user && (
+        {user && (
           <TouchableOpacity onPress={SignOut}>
             <Text style={style.logoutText}>Sair</Text>
           </TouchableOpacity>

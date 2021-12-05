@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react"; // importando um framework
 import AsyncStorage from "@react-native-async-storage/async-storage"; // dependência para lidar com o sincronismo do storage
 import * as AuthSession from "expo-auth-session"; // dependência para lidar com a autenticação
-import { api } from "../services/api";
+import { api } from "../services/backend";
 
 type IUser = { // cria a tipagem de usuário
   id: string;
@@ -15,7 +15,7 @@ type IAuthResponseBackend = { // cria a tipagem da resposta da autenticação do
   user: IUser;
 }
 
-type IAuthSessionResponse ={ // cria a tipagem da resposta de autorização
+type IAuthSessionResponse = { // cria a tipagem da resposta de autorização
   params: {
     code?: string;
     error?: string;
@@ -42,7 +42,7 @@ export function AuthProvider({ children }: IAuthProvider) {
   const [isSigningIn, setIsSigningIn] = useState(true); // usando o conceito de imutabilidade
   const [user, setUser] = useState<IUser | null>(null); // usando o conceito de imutabilidade
 
-  const clientId = "e354e9baaed856d4d48d"; // ID do cliente com a conexão
+  const clientId = "bdf53ab941edb35710dc"; // ID do cliente com a conexão
 
   // função que executará o login do usuário
   async function SignIn(): Promise<void> {
@@ -57,7 +57,7 @@ export function AuthProvider({ children }: IAuthProvider) {
 
       // verifica o status da autenticação com o GitHub
       if (authSession.type === "success" && authSession.params.error !== "access_denied") {
-        const authResponseBackend = await api.post("/authenticate", { code: authSession.params.code }); // chama uma rota do backend
+        const authResponseBackend = await api.post("/user", { code: authSession.params.code }); // chama uma rota do backend
 
         const { user, token } = authResponseBackend.data as IAuthResponseBackend; // desestrutura os dados recebido
 

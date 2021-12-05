@@ -1,6 +1,6 @@
 import React from "react"; // importa um framework
 import { View } from "react-native"; // importa um framework
-import { UseAuth } from "../../hooks/auth";
+import { UseAuth } from "../../hooks/authHooks";
 import { color } from "../../theme";
 import { Button } from "../button";
 import { style } from "./style";

@@ -3,7 +3,7 @@ import React from "react"; // importa um framework
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto"; // dependência para lidar com fontes
 import AppLoading from "expo-app-loading"; // dependência para lidar com o carregamento da aplicação
 import { StatusBar } from "expo-status-bar"; // dependência para lidar com barra de cima do celular
-import { AuthProvider } from "./src/hooks/auth";
+import { AuthProvider } from "./src/hooks/authHooks";
 import { Home } from "./src/screens/home";
 
 // função que será o coração da aplicação unindo todas as páginas

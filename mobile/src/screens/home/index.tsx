@@ -4,7 +4,7 @@ import { Header } from "../../components/header";
 import { MessageList } from "../../components/messageList";
 import { SendMessageForm } from "../../components/sendMessageForm";
 import { SignInBox } from "../../components/signInBox";
-import { UseAuth } from "../../hooks/auth";
+import { UseAuth } from "../../hooks/authHooks";
 import { style } from "./style";
 
 // função que servirá como a página home
