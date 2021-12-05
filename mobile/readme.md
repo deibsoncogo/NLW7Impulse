@@ -26,7 +26,7 @@ Dependências usadas em modo de desenvolvimento: `@babel/core`, `@types/react`, 
 
 ## Imagens
 ### Tela principal
-![Tela principal](/frontend/src/assets/prints/print1.png)
+![Tela principal](/mobile/src/assets/prints/print1.png)
 
 ### Tela principal com o usuário logado
-![Tela principal com o usuário logado](/frontend/src/assets/prints/print2.png)
+![Tela principal com o usuário logado](/mobile/src/assets/prints/print2.png)
