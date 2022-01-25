@@ -1,5 +1,5 @@
 import { FormEvent, useContext, useState } from "react"; // framework que vai lidar com diversas coisas importante
-import { VscSignOut, VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com icones
+import { VscSignOut, VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com ícones
 import { AuthContext } from "../../contexts/authContext";
 import { api } from "../../services/backend";
 import style from "./style.module.scss";
@@ -55,12 +55,12 @@ export function SendMessageForm() {
         <button type="submit">Enviar mensagem</button>
       </form>
     </div>
-  ); // retornar algo criando o conteudo na página
+  ); // retornar algo criando o conteúdo na página
 }
 
 /** anotações
  * div: serve para agrupar os comandos
- * button: cria um botão para receber um função com um icone
+ * button: cria um botão para receber um função com um ícone
  * header: define que um grupo de comandos será o cabeçalho
  * img: insere uma imagem
  * strong: insere um texto com destaque

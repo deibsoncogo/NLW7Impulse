@@ -65,7 +65,7 @@ export function MessageList() {
         ))}
       </ul>
     </div>
-  ); // retornar algo criando o conteudo na página
+  ); // retornar algo criando o conteúdo na página
 }
 
 /** anotações

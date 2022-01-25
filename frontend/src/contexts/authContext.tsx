@@ -1,7 +1,7 @@
 import { useEffect, createContext, ReactNode, useState } from "react"; // framework que vai lidar com diversas coisas importante
 import { api } from "../services/backend";
 
-// tipagem do usuario da aplicação
+// tipagem do usuário da aplicação
 type IUser = {
   id: string;
   name: string;

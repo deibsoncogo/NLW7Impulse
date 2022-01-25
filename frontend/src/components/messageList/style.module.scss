@@ -1,8 +1,8 @@
 .messageListWrapper {
   display: flex; // define o tipo de alinhamento
   flex-direction: column; // define o formato do alinhamento
-  justify-content: space-between; // define o alinhamento do conteudo
-  align-items: flex-start; // define o alinhamento dos itens dentro do conteudo
+  justify-content: space-between; // define o alinhamento do conteúdo
+  align-items: flex-start; // define o alinhamento dos itens dentro do conteúdo
 
   > img {
     height: 28px; // define a altura da imagem
@@ -13,7 +13,7 @@
 .messageList {
   display: flex; // define o tipo de alinhamento
   flex-direction: column; // define o formato do alinhamento
-  justify-content: center; // define o alinhamento do conteudo
+  justify-content: center; // define o alinhamento do conteúdo
   gap: 40px; // define o espaçamento entre os itens
   flex: 1; // cria um grupo de espaçamento
 
@@ -33,7 +33,7 @@
 
     .messageUser {
       display: flex; // define o tipo de alinhamento
-      align-items: center; // define o alinhamento dos itens dentro do conteudo
+      align-items: center; // define o alinhamento dos itens dentro do conteúdo
       margin-top: 16px; // define um espaçamento externo no lado de cima
 
       .userImage {

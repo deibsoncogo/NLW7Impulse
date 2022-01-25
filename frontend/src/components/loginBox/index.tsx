@@ -1,5 +1,5 @@
 import { useContext } from "react"; // framework que vai lidar com diversas coisas importante
-import { VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com icones
+import { VscGithubInverted } from "react-icons/vsc"; // dependência para lidar com ícones
 import { AuthContext } from "../../contexts/authContext";
 import style from "./style.module.scss";
 
@@ -16,11 +16,11 @@ export function LoginBox() {
         Entrar com GitHub
       </a>
     </div>
-  ); // retornar algo criando o conteudo na página
+  ); // retornar algo criando o conteúdo na página
 }
 
 /** anotações
- * div: servira para agrupar todo o conteudo
+ * div: servira para agrupar todo o conteúdo
  * strong: vai conter um texto para chamar a atenção
- * a: servira para criar um link para a página de login e dentro temos um icone com um texto
+ * a: servira para criar um link para a página de login e dentro temos um ícone com um texto
  */

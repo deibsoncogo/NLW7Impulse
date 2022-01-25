@@ -7,7 +7,7 @@ import style from "./app.module.scss";
 
 // função que vai ser a nossa aplicação
 export function App() {
-  const { user } = useContext(AuthContext); // permite a utilização do metodo de contexto
+  const { user } = useContext(AuthContext); // permite a utilização do método de contexto
 
   return (
     <div className={`${user ? style.contentSigned : ""}`}>

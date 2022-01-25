@@ -3,8 +3,8 @@
   flex-direction: column; // define a orientação do alinhamento
   position: relative; // define a base do alinhamento
   padding: 24px; // define um espaçamento interno
-  align-items: center; // define o alinhamento do itens dentro do conteudo
-  align-self: center; // define a ocupação do item dentro do conteudo
+  align-items: center; // define o alinhamento do itens dentro do conteúdo
+  align-self: center; // define a ocupação do item dentro do conteúdo
 
   text-align: center; // define o alinhamento do texto
 
@@ -30,7 +30,7 @@
 .userInformation {
   display: flex; // define o tipo do alinhamento
   flex-direction: column; // define a orientação do alinhamento
-  align-items: center; // define o alinhamento dos itens dentro do conteudo
+  align-items: center; // define o alinhamento dos itens dentro do conteúdo
 
   .userImage {
     padding: 3px; // define um espaçamento interno
@@ -54,7 +54,7 @@
 
   .userGitHub {
     display: flex; // define o tipo do alinhamento
-    align-items: center; // define o alinhamento do item dentro do conteudo
+    align-items: center; // define o alinhamento do item dentro do conteúdo
     margin-top: 8px; // define um espaçamento externo no lado de cima
 
     color: #c4c4cc; // define uma cor
@@ -68,7 +68,7 @@
 .sendMessageForm {
   display: flex; // define o tipo do alinhamento
   flex-direction: column; // define o direção do alinhamento
-  align-self: stretch; // define a ocupação do item dentro do conteudo
+  align-self: stretch; // define a ocupação do item dentro do conteúdo
   margin-top: 10%; // define um espaçamento externo no lado de cima
 
   background: #202024; // define uma cor de fundo
@@ -107,11 +107,11 @@
 
   button {
     display: flex; // define o tipo do alinhamento
-    justify-content: center; // define o alinhamento do conteudo
-    align-items: center; // define o alinhamento do item dentro do conteudo
+    justify-content: center; // define o alinhamento do conteúdo
+    align-items: center; // define o alinhamento do item dentro do conteúdo
     margin: 14px 24px; // define um espaçamento externo
     padding: 0 32px; // define um espaçamento interno
-    align-self: flex-end; // define o preenchimento do item dentro do conteudo
+    align-self: flex-end; // define o preenchimento do item dentro do conteúdo
     height: 40px; // define a altura
 
     border: 0; // define uma borda
@@ -121,7 +121,7 @@
     color: #ffffff; // define uma cor
     font-size: 14px; // define o tamanho do texto
     font-weight: bold; // define o estilo do texto
-    text-transform: uppercase; // define o formato do texto (uppercase: letra maiuscula)
+    text-transform: uppercase; // define o formato do texto (uppercase: letra maiúscula)
     text-decoration: none; // define o sublinhado do texto
 
     &:hover { // executar estes comando quando o item dos selecionado

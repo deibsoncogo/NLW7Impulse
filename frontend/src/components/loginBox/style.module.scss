@@ -2,8 +2,8 @@
   display: flex; // define o tipo de alinhamento
   text-align: center; // define para o texto ficar no centro
   flex-direction: column; // define o orientação do alinhamento
-  justify-content: center; // define o alinhamento do conteudo
-  align-items: center; // define o alinhamento dos itens dentro do conteudo
+  justify-content: center; // define o alinhamento do conteúdo
+  align-items: center; // define o alinhamento dos itens dentro do conteúdo
 
   padding: 400px 80px 0; // define um espaçamento interno
 
@@ -30,7 +30,7 @@
     color: #09090a; // define a cor do texto
     font-size: 14px; // define o tamanho do texto
     font-weight: bold; // define o estilo do texto
-    text-transform: uppercase; // define o formato do texto (uppercase: letra maiuscula)
+    text-transform: uppercase; // define o formato do texto (uppercase: letra maiúscula)
     text-decoration: none; // define o sublinhado do texto
 
     svg {

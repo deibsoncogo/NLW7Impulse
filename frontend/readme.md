@@ -7,6 +7,13 @@ Para instalar as dependências necessárias temos que executar o seguinte comand
 yarn
 ```
 
+Para executar esta parte é necessário você já ter criado o sistema de autenticação para o backend, agora iremos apenas realizar um ajuste no callback e no client ID
+  1. Acesse sua conta, settings, developer settings e OAuth Apps
+  2. Selecione o OAuth App criado para o backend e ajuste o callback
+     * Authorization callback URL: http://localhost:3000
+  3. Copie e cole o Client ID no arquivo abaixo dentro da variável `clientId`
+     * frontend\src\contexts\authContext.tsx
+
 Para iniciar o site podemos utilizar o atalho `yarn dev` ou o seguinte comando
 ```bash
 yarn vite
