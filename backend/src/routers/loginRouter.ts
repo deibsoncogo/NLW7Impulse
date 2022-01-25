@@ -10,7 +10,7 @@ loginRouter.get("", (request, response) => {
   );
 });
 
-// retorna o código do login extraido
+// retorna o código do login extraído
 loginRouter.get("/callback", (request, response) => {
   const { code } = request.query; // recebe os dados
 

@@ -7,9 +7,9 @@ export class CreateMessageController {
     const { message } = request.body; // recebe os dados
     const { userId } = request; // recebe os dados
 
-    const createMessageService = new CreateMessageService(); // instancia o serviço
+    const createMessageService = new CreateMessageService(); // instancia o service
 
-    const result = await createMessageService.execute(message, userId); // chama o serviço
+    const result = await createMessageService.execute(message, userId); // chama o service
 
     return response.status(201).json(result); // retornar algo ao chamador
   }

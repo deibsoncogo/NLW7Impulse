@@ -9,6 +9,20 @@ Para instalar as dependências necessárias temos que executar o seguinte comand
 yarn
 ```
 
+Depois é necessário configurar o sistema de login do GitHub
+  1. Acesse sua conta, settings, developer settings e OAuth Apps
+  2. Clique em New OAuth App para criar e informar exatamente estes dados
+     * Homepage URL: http://localhost:3333
+     * Authorization callback URL: http://localhost:3333/login/callback
+  3. As demais informações você pode configurar como desejar
+  4. Crie um Client ID e Client secrets e guarde estes dados
+  5. Na raiz do projeto crie o arquivo .env com as seguintes variáveis ambiente
+     * GITHUB_CLIENT_ID= (Client ID salvo no GitHub)
+     * GITHUB_CLIENT_SECRET= (Client secrets salvo no GitHub)
+
+Agora é necessário criar a chave mestre para o token dentro do arquivo .env
+  JWT_SECRET= (Use MD5 para gerar uma chave segura)
+
 Para iniciar o servidor podemos utilizar o atalho `yarn dev` ou o seguinte comando
 ```bash
 yarn ts-node-dev --exit-child src/server.ts

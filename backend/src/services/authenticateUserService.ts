@@ -13,7 +13,7 @@ interface IUserGitHub { // tipagem dos dados do usuário do GitHub
   avatar_url: string;
 }
 
-// classe que será o serviço da criação da autenticação do usuário
+// classe que será o service da criação da autenticação do usuário
 export class AuthenticateUserService {
   async execute(code: string) { // função principal
     // define o link para executar o login do GitHub

@@ -6,10 +6,10 @@ export class AuthenticateUserController {
   async execute(request: Request, response: Response) { // função principal
     const { code } = request.body; // recebe os dados
 
-    const authenticateUserService = new AuthenticateUserService(); // instancia o servico
+    const authenticateUserService = new AuthenticateUserService(); // instancia o service
 
     try { // serve para detectar erros
-      const result = await authenticateUserService.execute(code); // chama o servico
+      const result = await authenticateUserService.execute(code); // chama o service
 
       return response.status(201).json(result); // retornar algo ao chamador
     } catch (error) { // serve para dar tratativa ao erro

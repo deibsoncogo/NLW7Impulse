@@ -6,9 +6,9 @@ export class ProfileUserController {
   async execute(request: Request, response: Response) { // função principal
     const { userId } = request; // recebe os dados
 
-    const profileUserService = new ProfileUserService(); // instancia o serviço
+    const profileUserService = new ProfileUserService(); // instancia o service
 
-    const result = await profileUserService.execute(userId); // chama o serviço
+    const result = await profileUserService.execute(userId); // chama o service
 
     return response.status(200).json(result); // retornar algo ao chamador
   }
