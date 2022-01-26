@@ -24,12 +24,12 @@ export function SignInBox() {
 }
 
 /** comentários dos comandos dentro de estrutura tsx
- * View cria um grupo de conteudo
+ * View cria um grupo de conteúdo
  * Button permite utilizar o componente criado
  * title permite utilizar a propriedade criada para definir um texto
  * color define uma cor
  * backgroundColor define uma cor de fundo
- * icon permite utilizar a propriedade criada para definir o icone
+ * icon permite utilizar a propriedade criada para definir o ícone
  * onPress define oque executar quando o botão for pressionado
  * isLoading permite utilizar a propriedade que criamos
  */

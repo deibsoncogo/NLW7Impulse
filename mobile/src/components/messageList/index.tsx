@@ -19,7 +19,7 @@ export function MessageList() {
   const [currentMessages, setCurrentMessages] = useState<IMessage[]>([]); // usando o conceito de imutabilidade
 
   useEffect(() => { // vai executar algo sempre que este arquivo for iniciado
-    async function FetchMessage() { // cria uma função assincrona
+    async function FetchMessage() { // cria uma função assíncrona
       const messageResponse = await api.get<IMessage[]>("/message"); // executa esta rota no backend
       setCurrentMessages(messageResponse.data); // salva o retorno no DB volátil
     }

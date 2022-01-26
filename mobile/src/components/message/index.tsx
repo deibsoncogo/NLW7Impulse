@@ -39,12 +39,12 @@ export function Message({ data }: IProps) {
 
 /** comentário dos comandos dentro da estrutura tsx
  * MotiView permite criar animações
- * from define onde o conteudo deve iniciar
- * animate define para onde o conteudo deve ir
+ * from define onde o conteúdo deve iniciar
+ * animate define para onde o conteúdo deve ir
  * transition define o tipo do efeito e sua duração
  * style importa uma estilização esterna
  * Text cria um texto
- * View cria um grupo de conteudo
+ * View cria um grupo de conteúdo
  * UserPhoto está importando um componente
  * imageUri busca uma imagem a partir de uma URL
  * size é uma propriedade cria por nos qu define o tamanho da imagem

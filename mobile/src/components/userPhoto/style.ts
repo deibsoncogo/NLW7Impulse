@@ -4,8 +4,8 @@ import { color } from "../../theme";
 // variável que vai conter as estilizações
 export const style = StyleSheet.create({
   container: {
-    justifyContent: "center", // define o alinhamento do conteudo
-    alignItems: "center", // define o alinhamento dos itens dentro do conteudo
+    justifyContent: "center", // define o alinhamento do conteúdo
+    alignItems: "center", // define o alinhamento dos itens dentro do conteúdo
   },
 
   avatar: {

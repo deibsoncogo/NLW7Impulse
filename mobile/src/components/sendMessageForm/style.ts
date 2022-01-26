@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native"; // importação para lidar com estilização
-import { getBottomSpace } from "react-native-iphone-x-helper"; // dependencia para lidar formatações especiais do Iphone
+import { getBottomSpace } from "react-native-iphone-x-helper"; // dependência para lidar formatações especiais do Iphone
 import { color } from "../../theme";
 
 // variável que vai conter as estilizações

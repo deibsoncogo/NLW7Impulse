@@ -1,13 +1,13 @@
 import React from "react"; // importação do framework
 import { TouchableOpacity, TouchableOpacityProps, Text, ColorValue, ActivityIndicator } from "react-native"; // importação do framework
-import { AntDesign } from "@expo/vector-icons"; // dependência que vai lidar com os icones
+import { AntDesign } from "@expo/vector-icons"; // dependência que vai lidar com os ícones
 import { style } from "./style";
 
 type IProps = TouchableOpacityProps & { // tipagem do botão
   title: string; // define o tipo de dados como texto
   color: ColorValue; // define o tipo do dados como um código de uma cor
   backgroundColor: ColorValue;
-  icon?: React.ComponentProps<typeof AntDesign>["name"]; // truque para tornar dinâmico o tipo do icone
+  icon?: React.ComponentProps<typeof AntDesign>["name"]; // truque para tornar dinâmico o tipo do ícone
   isLoading?: boolean;
 }
 
@@ -36,12 +36,12 @@ export function Button({ title, color, backgroundColor, icon, isLoading = false,
 
 /** comentário dos comandos dentro da estrutura tsx
  * TouchableOpacity cria um botão
- * style={[estilizacaoImportada, { estilizacaoLocal }]} cria um grupo de estilização
+ * style={[estilizaçãoImportada, { estilizaçãoLocal }]} cria um grupo de estilização
  * activeOpacity={...} ajusta a opacidade de ativação do botão
  * disabled={boolean} define se o botão deve ficar desativado
  * {...rest} recebe as demais propriedades não definido
  * { boolean ? true : false } cria um if ternário
- * ActivityIndicator cria um icone de carregamento dentro do botão
- * AntDesign cria um icone de forma dinâmica
+ * ActivityIndicator cria um ícone de carregamento dentro do botão
+ * AntDesign cria um ícone de forma dinâmica
  * Text cria um texto de forma dinâmica
  */

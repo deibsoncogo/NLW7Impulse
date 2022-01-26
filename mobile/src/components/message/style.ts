@@ -19,7 +19,7 @@ export const style = StyleSheet.create({
   footer: {
     width: "100%", // define a largura
     flexDirection: "row", // define a orientação do alinhamento // define a orientação do alinhamento
-    alignItems: "center", // define o alinhamento dos itens dentro do conteudo
+    alignItems: "center", // define o alinhamento dos itens dentro do conteúdo
   },
 
   userName: {

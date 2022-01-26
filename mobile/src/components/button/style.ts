@@ -7,8 +7,8 @@ export const style = StyleSheet.create({
     height: 48, // define a altura
     width: "100%", // define a largura
     flexDirection: "row", // define a orientação do alinhamento
-    justifyContent: "center", // define o alinhamento do conteudo
-    alignItems: "center", // define o alinhamento dos itens dentro do conteudo
+    justifyContent: "center", // define o alinhamento do conteúdo
+    alignItems: "center", // define o alinhamento dos itens dentro do conteúdo
   },
 
   title: {

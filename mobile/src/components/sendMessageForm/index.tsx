@@ -53,7 +53,7 @@ export function SendMessageForm() {
 }
 
 /** comentários dos comandos dentro da estrutura tsx
- * View cria um grupo de conteudo
+ * View cria um grupo de conteúdo
  * style aplica um estilização
  * TextInput cria um campo de digitação
  * keyboardAppearance define um tema do input
@@ -61,7 +61,7 @@ export function SendMessageForm() {
  * placeholderTextColor define a cor do texto sobreposto do input
  * multiline permite ter quebra de linha
  * maxLength define a quantidade máxima de caracteres
- * onChangeText executa algo o conteudo do input for alterado
+ * onChangeText executa algo o conteúdo do input for alterado
  * value define o valor do input
  * editable define de o input pode ser alterado
  * Button permite a utilização do componente criado

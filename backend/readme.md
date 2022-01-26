@@ -20,6 +20,8 @@ Depois é necessário configurar o sistema de login do GitHub
      * GITHUB_CLIENT_ID= (Client ID salvo no GitHub)
      * GITHUB_CLIENT_SECRET= (Client secrets salvo no GitHub)
 
+*Caso deseje você pode manter os dados atuais do login!*
+
 Agora é necessário criar a chave mestre para o token dentro do arquivo .env
   JWT_SECRET= (Use MD5 para gerar uma chave segura)
 

@@ -7,6 +7,20 @@ Para instalar as dependências necessárias temos que executar o seguinte comand
 yarn
 ```
 
+Depois é necessário configurar o sistema de login do GitHub para o mobile
+  1. Acesse sua conta, settings, developer settings e OAuth Apps
+  2. Clique em New OAuth App para criar e informar exatamente estes dados
+     * Homepage URL: https://auth.expo.io/@SeuLoginExpo/nlw7heat
+     * Authorization callback URL: https://auth.expo.io/@SeuLoginExpo/nlw7heat
+  3. As demais informações você pode configurar como desejar
+  4. Copie e cole o Client ID no arquivo abaixo dentro da variável `clientId`
+     * mobile\src\hooks\authHooks.tsx
+
+*Caso deseje você pode manter os dados atuais do login!*
+
+Agora é necessário ajustar a variável `api` dentro do arquivo abaixo com o endereço IP que está rodando o backend, este IP vai fazer parte da API REST
+  * mobile\src\services\backend.ts
+
 Para iniciar o site podemos utilizar o atalho `yarn start` ou o seguinte comando
 ```bash
 expo start

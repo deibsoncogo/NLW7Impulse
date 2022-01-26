@@ -14,6 +14,8 @@ Para executar esta parte é necessário você já ter criado o sistema de autent
   3. Copie e cole o Client ID no arquivo abaixo dentro da variável `clientId`
      * frontend\src\contexts\authContext.tsx
 
+*Caso deseje você pode manter os dados atuais do login!*
+
 Para iniciar o site podemos utilizar o atalho `yarn dev` ou o seguinte comando
 ```bash
 yarn vite

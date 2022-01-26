@@ -6,14 +6,14 @@ export const style = StyleSheet.create({
   container: {
     width: "100%", // define a largura
     flexDirection: "row", // define a orientação do alinhamento
-    justifyContent: "space-between", // define o alinhamento do conteudo
-    alignItems: "center", // define o alinhamento dos itens dentro do conteudo
+    justifyContent: "space-between", // define o alinhamento do conteúdo
+    alignItems: "center", // define o alinhamento dos itens dentro do conteúdo
     paddingHorizontal: 20, // define um espaçamento externo nos lados
   },
 
   logoutButton: {
     flexDirection: "row", // define a orientação do alinhamento
-    alignItems: "center", // define o alinhamento dos itens dentro do conteudo
+    alignItems: "center", // define o alinhamento dos itens dentro do conteúdo
   },
 
   logoutText: {
