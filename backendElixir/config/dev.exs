@@ -2,7 +2,7 @@ import Config
 
 # configurações do banco de dados
 config :backendElixir, BackendElixir.Repo,
-  username: "nlw7impulse",
+  username: "nlw7impulseElixir",
   password: "docker",
   database: "backendelixir_dev",
   hostname: "localhost",

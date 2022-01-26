@@ -14,7 +14,7 @@ defmodule BackendElixir.Messages.Get do
     # realiza uma filtragem
     query = from message in Message, where: type(message.inserted_at, :date) == ^today
 
-    # reporta o rsultado
+    # reporta o resultado
     Repo.all(query)
   end
 end
